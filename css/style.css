@@ -1,0 +1,1042 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.header_container{
+    width: 100%;
+    height: 100vh;
+    background: url(/image/crop-plate-with-vegetable-salad.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+}
+
+
+.navbar-nav{
+    margin: 0px 60px;
+}
+
+
+.navbar-brand{
+    font-size: 29px !important;
+    color: rgb(223, 223, 28) !important;
+    font-weight: 900;
+}
+
+.nav-item{
+    margin: 0px 30px;
+}
+
+.nav-link{
+    font-size: 16px !important;
+    text-transform: uppercase;
+    color:rgba(255, 255, 255, 0.842);
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -4px;
+    background-color:rgb(213, 236, 0);
+    height: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before{
+    left: 0;
+    right: 0;
+}
+
+.nav-link:hover{
+    color:rgb(213, 236, 0) !important;
+}
+
+
+
+.icon-navbar{
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.763);
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0px 2px;
+    transition: 0.3s;
+}
+
+
+.icon-navbar:hover{
+    transform: scale(1.3);
+    color: rgba(255, 255, 255, 0.763);
+}
+
+
+.btn-navbar{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.918);
+    margin: 0px 25px;
+    padding: 12px 26px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+}
+
+
+.btn-navbar::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(28, 223, 64, 0.729) ;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+
+
+.btn-navbar:hover{
+    color: white !important;
+}
+
+
+.btn-navbar:hover::before{
+    transform: scale(1);
+}
+
+
+.home_section{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+
+.heading_first_home{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.851);
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+
+.heading_first_home span{
+    color: rgb(252, 252, 13);
+}
+
+
+.heading_lg_home{
+    font-size: 68px;
+    font-weight: 900;
+    color: white;
+}
+
+
+
+.heading_third_home{
+    font-size: 17px;
+    font-weight: 500;
+    font-style: italic;
+    color: rgba(255, 91, 91, 0.815);
+}
+
+
+.para_home{
+    font-size: 15px;
+    color: rgba(128, 128, 128, 0.851);
+    margin: 17px 0px;
+}
+
+
+.btn_home_content{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 11px 29px;
+    background-color:rgb(253, 0, 118);
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-top: 6px;
+    margin-right: 6px;
+    transition: 0.2s ease-in-out;
+}
+
+
+.btn_home_content:hover{
+    padding: 10px 29px;
+    background-color:transparent;
+    color: white;
+    border: 2px solid rgb(253, 0, 118);
+
+}
+
+
+.items_container{
+    width: 100%;
+    height: 280px;
+    /* border: 8px solid red; */
+    position: absolute;
+    left: 0px;
+    bottom: -140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content_items{
+    width: 100%;
+    height: 220px;
+    /* border: 3px solid blue; */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 2px 2px 16px gray !important;
+    cursor: pointer;
+}
+
+
+.item_image_1{
+    background-image: url("/image/assortment-citrus-fruits.jpg");
+    width: 100%;
+    height: 100%;
+    background-position:top;
+    background-size: cover;
+    border-radius: 200px;
+    transition: 0.4s ease;
+}
+
+.item_image_2{
+    background-image: url("/image/50882\ \(1\).jpg");
+    width: 100%;
+    height: 100%;
+    background-position:left;
+    background-size: cover;
+    border-radius: 200px;
+    transition: 0.4s ease;
+}
+
+.item_image_3{
+    background-image: url("/image/delicious-sandwiches-fries-ketchup-wooden-cutting-board-dark-mix-color-surface.jpg");
+    width: 100%;
+    height: 100%;
+    background-position:right;
+    background-size: cover;
+    border-radius: 200px;
+    transition: 0.4s ease;
+}
+
+.item_image_4{
+    background-image: url("/image/mixed-berries-with-yogurt-smoothies.jpg");
+    width: 100%;
+    height: 100%;
+    background-position:right;
+    background-size: cover;
+    border-radius: 200px;
+    transition: 0.4s ease;
+}
+
+
+.item_image_1:hover ,.item_image_2:hover ,.item_image_3:hover ,.item_image_4:hover{
+    transform: scale(1.2);
+}
+
+
+.special_deals{
+    width: 100%;
+    height: 500px;
+    /* border: 5px solid red; */
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.special_offers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 160px;
+    grid-gap: 22px;
+}
+
+.offers{
+    border-radius: 2px;
+}
+
+
+.offers-1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("/image/front-view-yummy-meat-cheeseburger-with-french-fries-dark-background-dinner-burgers-snack-fast-food-sandwich-salad-dish-toast.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.offers-2{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("/image/club-sandwich-with-side-french-fries.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.offers-3{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("/image/delicious-pizza-concept-wooden-table.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.heading_sm_offer{
+    font-size: 17px;
+    font-weight: 600;
+    margin: 15px 0px 2px 28px;
+    color: white;
+}
+
+.heading_offers{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.872);
+    margin: 0px 28px;
+}
+
+
+.services{
+    width: 100%;
+    height: 90vh;
+}
+
+.heading_sm_service{
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(238,0,59);
+}
+
+.heading_lg_service{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin: 18px 0px;
+    line-height: 53px;
+}
+
+
+
+.service_container{
+    margin: 75px;
+}
+
+
+.content_service{
+    width: 100%;
+    height: 300px;
+    box-shadow: 2px 2px 21px rgba(0, 184, 219, 0.45) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transform: 0.3s ease;
+}
+
+.content_service_3{
+    width: 100%;
+    height: 300px;
+    box-shadow: 2px 2px 21px rgba(0, 184, 219, 0.45) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transform: 0.3s ease;
+}
+
+
+.content_service::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.35)0%,rgba(0,0,0,0)80%);
+    transform: 0.3s ease;
+}
+
+
+.content_service_3::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.35)0%,rgba(0,0,0,0)80%);
+    transform: 0.3s ease;
+}
+
+.content_service_3:hover::before{
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+
+.content_service:hover::before{
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+.content_service_3:hover{
+    transform: translateY(-10px);
+}
+
+
+.content_service:hover{
+    transform: translateY(-10px);
+}
+
+
+.icon_content_img{
+    width: 120px;
+}
+
+.heading_content_service{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 26px 0px 13px 0px;
+}
+
+.para_food{
+    font-size: 15px;
+    font-weight: 30px;
+    color: rgba(0, 0, 0, 0.648);
+    text-align: center;
+    line-height: 23px;
+}
+
+
+.about_event{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about_event_container{
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 11px rgba(0, 184, 219, 0.45);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+
+.content_about_event{
+    padding:20px;
+}
+
+
+.heading_sm_event{
+    font-size: 18px;
+    font-weight: 900;
+    margin: 16px 0px;
+}
+
+
+.heading_lg_event{
+    font-size: 37px;
+    font-weight: 900;
+}
+
+
+.para_about_event{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.777);
+    margin: 16px 0px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+
+.image_pizza{
+    width: 100%;
+    height: 100%;
+    background: url("/image/mixed-pizza-with-various-ingridients.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+
+.rating_star{
+    display: flex;
+    list-style: none;
+    padding: 10px 0px !important;
+}
+
+
+.icon_star{
+    color: rgb(46, 220, 46);
+}
+
+.menu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.heading_sm_menu{
+    background-color:#F3BE00;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 14px 26px;
+    text-transform: uppercase;
+    margin: 14px 0px;
+    border-radius: 4px;
+}
+
+.heading_lg_menu{
+    font-size: 43px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin: 12px 0px;
+    text-align: center;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+.para_menu{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.767);
+    text-align: center;
+    max-width: 80%;
+    line-height: 34px;
+
+}
+
+
+
+.content_menu{
+    width: 100% !important;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 22px;
+}
+
+
+.image_container{
+    width: 100%;
+    height: 250px;
+}
+
+
+.img_content_menu{
+    width: 100%;
+    height: 100%;
+}
+
+
+.heading_text{
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 29px 0px 9px 0px;
+}
+
+
+.para_text{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 75%;
+    line-height: 20px;
+}
+
+
+.text_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn_order{
+    text-decoration: none;
+    display: inline-block;
+    margin: 12px 0px;
+    padding: 13px 29px;
+    background-color:red;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+}
+
+
+.btn_order:hover{
+    color: white;
+    background-color: rgb(204,2,2);
+}
+
+
+
+.text_review{
+    width: 100%;
+    height: 100vh;
+    padding: 24px 0px;
+}
+
+.heading_text_review{
+    font-size: 38px;
+    font-weight: 900;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+
+
+.content_container{
+    display: flex;
+    margin: 15px 0px;
+}
+
+
+
+
+.img_container{
+    width: 180px;
+    height: 150px;
+    border-radius: 120px;
+    margin: 0px 15px;
+}
+
+.business_man_img{
+    background: url("/image/confident-attractive-caucasian-guy-beige-pullon-smiling-broadly-while-standing-against-gray.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.software_engineer_img{
+    background: url("/image/medium-shot-man-working-laptop.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.text_container_review{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(211, 211, 211, 0.8);
+    padding: 18px 34px;
+    position: relative;
+}
+
+
+.text_review_container{
+    margin: 28px 0px;
+}
+
+
+.icon_text_review{
+    font-size: 24px;
+    color: rgba(41, 40, 40, 0.904);
+    cursor: pointer;
+}
+
+.para_text_review{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.662);
+    text-align: justify;
+    line-height: 24px;
+    margin: 9px 0px;
+}
+
+
+.about_customer{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+
+}
+
+.name_customer{
+    font-size: 21px;
+    font-weight: 800;
+
+}
+
+
+.profectional{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.89);
+}
+
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    padding: 18px 0px;
+}
+
+
+.contact_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.contact_content{
+    width: 90%;
+    height: 500px;
+    /* border: 3px solid red; */
+}
+
+
+.heading_contact{
+    font-size: 34px;
+    font-weight: 900;
+    color: black;
+    position: relative;
+    margin-bottom: 40px !important;
+}
+
+
+.heading_contact::after{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    bottom: -12px;
+    background-color: rgb(204,2,2);
+    height: 3px;
+    width: 20%;
+    border-radius: 12px;
+}
+
+.heading_sm_contact{
+    font-size: 20px;
+    font-weight: 800;
+    margin: 15px 0px;
+    color: rgba(0, 0, 0, 0.765);
+}
+
+
+.para_contact{
+    font-size: 16px;
+    margin: 15px 0px;
+    color: rgba(0, 0, 0, 0.639);
+}
+
+
+.heading_contact_content{
+    font-size: 30px;
+    font-weight: 800;
+    margin: 14px 0px;
+}
+
+
+.location_para{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.735);
+    margin: 16px 0px;
+}
+
+
+.location_icon{
+    font-size: 17px;
+    cursor: pointer;
+    margin: 0px 12px;
+}
+
+
+.location_icon_f{
+    font-size: 17px;
+    cursor: pointer;
+    margin: 0px 12px;
+    color: rgba(0, 0, 255, 0.859);
+}
+
+.location_icon_i{
+    font-size: 17px;
+    cursor: pointer;
+    margin: 0px 12px;
+    color: red;
+}
+
+
+.contact_form{
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid red; */
+}
+
+
+
+.heading_form{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.829);
+    margin: 30px 0px;
+}
+
+
+input{
+    box-shadow: none !important;
+    outline: none;
+}
+
+
+textarea{
+    box-shadow: none !important;
+    border: none;
+    margin: 14px 0px;
+    height: 150px;
+}
+
+
+@media (max-width:1000px){
+    .services, .menu, .about_event, .text_review, .contact{
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(19, 18, 18);
+    }
+
+    .navbar-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(26, 25, 25);
+        margin: 0px !important;
+    }
+    
+
+    .navbar-rightside-content{
+        display: none;
+    }
+
+    .nav-item{
+        margin: 8px 0px;
+    }
+
+    .items_container_4{
+        display: none;
+    }
+
+    .icon_content_img{
+        width: 100px;
+    }
+
+    .heading_content_service{
+        font-size: 18px;
+    }
+
+    .para_food{
+        font-size: 12px;
+        color:rgba(0, 0, 0, 0.596);
+    }
+
+
+    .menu{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 46px;
+    }
+
+    .para_text_review{
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.662);
+        text-align: left;
+        line-height: 21px;
+        margin: 4px 0px;
+        }
+
+
+}
+
+
+@media (max-width:840px){
+
+    .services, .menu, .about_event, .text_review, .contact{
+        width: 100%;
+        height: auto;
+    }
+
+    .para_text_review{
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.662);
+    text-align: left;
+    line-height: 21px;
+    margin: 6px 0px;
+    }
+
+    .name_customer{
+        font-size: 19px;
+        font-weight: 800;
+    }
+
+    .profectional{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.89);
+    }
+
+}
+
+
+@media (max-width:760px){
+    .services, .menu, .about_event, .text_review, .contact{
+        width: 100%;
+        height: auto;
+    }
+
+    .items_container_3{
+        display: none;
+    }
+
+    .content_service_3{
+        display: none;
+    }
+
+    .para_text_review{
+        font-size: 9px;
+        color: rgba(0, 0, 0, 0.662);
+        text-align: left;
+        line-height: 19px;
+        margin: 9px 0px;
+        }
+
+    .name_customer{
+        font-size: 20px;
+        font-weight: 800;
+        
+    }
+
+    .profectional{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.89);
+    }
+
+}
+
+@media(max-width:550px){
+    .services, .menu, .about_event, .text_review, .contact{
+        width: 100%;
+        height: auto;
+    }
+
+    .home_section_content{
+        text-align: center;
+    }
+    
+
+    .para_text_review{
+        font-size: 7px;
+        color: rgba(0, 0, 0, 0.662);
+        text-align: left;
+        line-height: 17px;
+        margin: 9px 0px;
+        }
+
+    .name_customer{
+        font-size: 18px;
+        font-weight: 800;
+        
+        }
+
+    .profectional{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.89);
+    }
+
+
+    .table_version{
+        display: none;
+    }
+
+    .table_version_2{
+        width: 100%;
+    }
+    
+    .img_container{
+        width: 100px;
+        height: 80px;
+        border-radius: 120px;
+        margin: 0px 15px;
+    }
+}
+
+
+
+
+
